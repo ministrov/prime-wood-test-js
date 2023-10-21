@@ -1,3 +1,6 @@
-const a = 0;
+const itemButton = document.querySelector('.table-wrapper-btn');
+const modal = document.querySelector('.modal-overlay');
 
-console.log(a);
+itemButton.addEventListener('click', () => {
+  modal.classList.toggle('modal--open');
+});
