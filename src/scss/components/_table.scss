@@ -1,0 +1,53 @@
+.table {
+  border-collapse: collapse;
+}
+
+.table__row,
+.table__head {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.table__header .table__head {
+  text-align: center;
+}
+
+tbody .table__head {
+  font-size: 0.8rem;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+/* Button styling */
+
+.table-wrapper-btn {
+  display: inline-block;
+  width: 100%;
+  max-width: 280px;
+  margin-top: auto;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: inherit;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 8px;
+}
+
+.table-btn:hover,
+.table-btn:focus {
+  outline: none;
+
+}
+
+/* @media  screen and (max-width: 498px) {
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .table {
+    overflow-x: auto;
+  }
+} */
