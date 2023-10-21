@@ -1,0 +1,37 @@
+.header {
+  margin-bottom: 2rem;
+}
+
+.header__logo {
+  display: inline-block;
+  max-width: 60px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: lightgray
+}
+
+.header__text {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: red;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.burger div {
+  width: 1.5rem;
+  height: 0.15rem;
+  margin: 0.2rem;
+  background-color: black;
+  transition: all 0.34s ease-in;
+}
