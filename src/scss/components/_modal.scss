@@ -15,6 +15,14 @@
   display: block;
 }
 
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+
 @media screen and (max-width: 798px) {
   .modal {
     width: 18rem;
