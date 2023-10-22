@@ -10,11 +10,13 @@
         @include('partials/header.html')
         <div class="main__table-wrapper table-wrapper">
           @include('partials/table.html')
-          <button class="table-wrapper-btn" type="button">New item</button>
+          <button class="table-wrapper-btn" type="button" data-path="first">New item</button>
         </div>
       </main>
+      <div class="main__container">
+        @include('partials/modal.html')
+      </div>
     </div>
   </div>
 </body>
-
 </html>

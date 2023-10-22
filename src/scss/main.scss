@@ -7,14 +7,7 @@
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/table";
-
-// // тестовые стили, удалите их
-// .page__body {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: var(--vh);
-// }
+@import "./components/modal";
 
 .main {
   margin-top: 2rem;
@@ -29,6 +22,48 @@
   flex-direction: column;
   align-items: center;
   min-height: 425px;
+}
+
+.main__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+	opacity: 0;
+	visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.main__container::before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.main__container.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 468px) {
